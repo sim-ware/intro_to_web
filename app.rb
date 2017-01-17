@@ -2,10 +2,7 @@ require 'sinatra'
 
 set :session_secret, 'super secret'
 
-def initialize
-  @randomcat = ["Amigo", "Oscar", "Viking"].sample
-end
-
   get '/cat' do
+    @randomcat = ["Amigo", "Oscar", "Viking"].sample
     erb(:index)
   end
