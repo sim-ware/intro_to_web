@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'shotgun'
 
 set :session_secret, 'super secret'
 
